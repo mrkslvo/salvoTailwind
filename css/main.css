@@ -656,13 +656,36 @@ video {
   border-radius: 6px;
 }
 
+.rounded-sm {
+  border-radius: 0.125rem;
+}
+
+.rounded-\[\] {
+  border-radius: ;
+}
+
 .border-2 {
   border-width: 2px;
+}
+
+.bg-purple-700 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(126 34 206 / var(--tw-bg-opacity));
 }
 
 .bg-slate-800 {
   --tw-bg-opacity: 1;
   background-color: rgb(30 41 59 / var(--tw-bg-opacity));
+}
+
+.bg-purple-900 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(88 28 135 / var(--tw-bg-opacity));
+}
+
+.bg-purple-950 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(59 7 100 / var(--tw-bg-opacity));
 }
 
 .object-cover {
@@ -674,12 +697,17 @@ video {
   padding: 0.5rem;
 }
 
-.p-4 {
-  padding: 1rem;
-}
-
 .p-8 {
   padding: 2rem;
+}
+
+.p-6 {
+  padding: 1.5rem;
+}
+
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
 }
 
 .px-12 {
@@ -697,14 +725,19 @@ video {
   padding-bottom: 1rem;
 }
 
-.px-8 {
-  padding-left: 2rem;
-  padding-right: 2rem;
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
-.px-10 {
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
 }
 
 .text-center {
@@ -772,10 +805,6 @@ img{
   .sm\:max-w-\[500px\] {
     max-width: 500px;
   }
-
-  .sm\:gap-12 {
-    gap: 3rem;
-  }
 }
 
 @media (min-width: 768px) {
@@ -810,18 +839,6 @@ img{
 
   .md\:gap-10 {
     gap: 2.5rem;
-  }
-
-  .md\:gap-12 {
-    gap: 3rem;
-  }
-
-  .md\:gap-1 {
-    gap: 0.25rem;
-  }
-
-  .md\:gap-y-16 {
-    row-gap: 4rem;
   }
 
   .md\:px-0 {
@@ -870,28 +887,12 @@ img{
     flex-direction: row;
   }
 
-  .lg\:gap-0 {
-    gap: 0px;
-  }
-
-  .lg\:gap-40 {
-    gap: 10rem;
-  }
-
-  .lg\:gap-16 {
-    gap: 4rem;
-  }
-
-  .lg\:gap-8 {
-    gap: 2rem;
-  }
-
   .lg\:gap-12 {
     gap: 3rem;
   }
 
-  .lg\:gap-y-16 {
-    row-gap: 4rem;
+  .lg\:gap-40 {
+    gap: 10rem;
   }
 
   .lg\:text-4xl {
@@ -901,36 +902,12 @@ img{
 }
 
 @media (min-width: 1440px) {
-  .xl\:h-\[400px\] {
-    height: 400px;
-  }
-
-  .xl\:h-\[500px\] {
-    height: 500px;
-  }
-
-  .xl\:h-\[500p\] {
-    height: 500p;
-  }
-
   .xl\:h-\[450px\] {
     height: 450px;
   }
 
   .xl\:w-\[120\%\] {
     width: 120%;
-  }
-
-  .xl\:w-\[400px\] {
-    width: 400px;
-  }
-
-  .xl\:w-\[800px\] {
-    width: 800px;
-  }
-
-  .xl\:w-\[500px\] {
-    width: 500px;
   }
 
   .xl\:w-\[450px\] {
