@@ -3,75 +3,175 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>RESPOSIVE TAILWIND</title>
+   <title>TAILWIND</title>
    <link rel="stylesheet" href="css/main.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body class="bg-slate-800" >
+<body class="font-serif" >
 
-   <!--! HOME -->
-   <div class="flex items-center justify-center flex-col gap-8 bg-slate-800 w-[100%] min-h-[100vh] md:flex-row md:px-16 lg:gap-40">
-      <div class="flex flex-col items-center justify-center md:w-[500px] md:items-start">
-         <h1 class="text-white text-3xl font-bold lg:text-4xl">Mark Salvo</h1>
-         <p class="text-center text-white px-12 py-4 md:text-start md:px-0">My name is Mark and I am a highly motivated and passionate individual. I have a strong belief in the power of hard work and dedication, and I strive to use these qualities to achieve success in all aspects of my life. I see my self in 5 years as <span class="text-purple-600 font-bold uppercase">Frontend Dev</span>.</p>
-         <button class="text-white border-2 px-4  py-1 rounded-[6px] bg-purple-950">Button</button>
+   <header  class="items-center justify-start md:justify-between gap-4 px-8 z-20 fixed flex w-full h-16 bg-white">
+      <div class="text-2xl cursor-pointer flex items-center justify-center gap-4 ">
+         <i class="fa-solid fa-bars"></i>
+         <h1 class="hidden md:block">Salvo<span class="font-bold">Shop</span></h1>
+         <div class="items-center justify-between rounded-full bg-slate-100 gap-3 hidden lg:flex text-base font-bold pr-2">
+            <button class="bg-black px-3 py-1 rounded-full text-white">Delivery</button>
+            <button class="pr-3 text-nowrap">Pick-Up</button>
+
+         </div>
       </div>
-      <div class="w-[250px] h-[250px] lg:w-[350px] lg:h-[350px] xl:w-[450px] xl:h-[450px]">
-         <img class="w-full h-full object-cover rounded-[50%]" src="./imgs/prof.png" alt="">
+
+      <div class="flex border-2 p-2 rounded-full items-center w-full md:w-1/2">
+         <div class="border-r-2 pr-3">
+            <i class="fa-solid fa-magnifying-glass pl-2"></i>
+         </div>
+         <input class="h-full outline-none p-1 pl-2 text-black" type="text" placeholder="Search...">
+      </div>
+
+      <div class="hidden md:flex items-center justify-center cursor-pointer ">
+         <i class="fa-solid fa-cart-shopping text-2xl mr-2"></i>
+         <p class="text-lg">Cart</p>
+      </div>
+      
+   </header>
+   
+   <div class="flex items-center justify-centerrelative w-full h-screen bg-black">
+      <img class="absolute w-full h-screen object-cover opacity-[0.7]" src="imgs/p2.jpg" alt="">
+      <h1 class="z-10  text-5xl font-bold text-white ml-4 md:ml-8 md:text-6xl">The <span class="text-yellow-500">BEST <br> FOOD</span> Delivery</h1>
+   </div>
+
+   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 place-items-center w-full py-8 rounded-md gap-4">
+      <!-- 1 -->
+      <div class="relative w-[90%] h-[250px]overflow-hidden rounded-md">
+         <img class="h-[250px] w-full object-cover " src="imgs/p1.jpg" alt="">
+         <div class="absolute w-full h-full bg-black/50 top-0 left-0 p-4">
+            <p class="text-2xl text-white font-bold ">Sun's out, BOGO's Out</p>
+            <p class="text-yellow-300 mt-4">Through 4/26</p>
+            <button class="bg-white transition-all duration-500 text-orange-600 py-2 px-4 rounded-full absolute bottom-2 hover:bg-orange-500 hover:text-white cursor-pointer">Order Now</button>
+         </div>
+      </div>
+      <!-- 2 -->
+      <div class="relative w-[90%] h-[250px]overflow-hidden rounded-md">
+         <img class="h-[250px] w-full object-cover " src="imgs/b1.jpg" alt="">
+         <div class="absolute w-full h-full bg-black/50 top-0 left-0 p-4">
+            <p class="text-2xl text-white font-bold ">Sun's out, BOGO's Out</p>
+            <p class="text-yellow-300 mt-4">Through 4/26</p>
+            <button class="bg-white transition-all duration-500 text-orange-600 py-2 px-4 rounded-full absolute bottom-2 hover:bg-orange-500 hover:text-white cursor-pointer">Order Now</button>
+         </div>
+      </div>
+      <!--  3  -->
+      <div class="relative w-[90%] h-[250px]overflow-hidden rounded-md">
+         <img class="h-[250px] w-full object-cover " src="imgs/b2.jpg" alt="">
+         <div class="absolute w-full h-full bg-black/50 top-0 left-0 p-4">
+            <p class="text-2xl text-white font-bold ">Sun's out, BOGO's Out</p>
+            <p class="text-yellow-300 mt-4">Through 4/26</p>
+            <button class="bg-white transition-all duration-500 text-orange-600 py-2 px-4 rounded-full absolute bottom-2 hover:bg-orange-500 hover:text-white cursor-pointer">Order Now</button>
+         </div> 
+      </div>
+   </div>
+   <h1 class="text-orange-600 font-bold text-2xl text-center mt-12 mb-4">Top Rated Menu Items</h1>
+   <div class="p-6 lg:pl-12 flex flex-col gap-4">
+      <p>Filter Type</p>
+      <div>
+         <buttun class="transition-all duration-500 border-2 border-orange-600 text-orange-600 px-4 py-2 rounded-md cursor-pointer hover:bg-orange-500 hover:text-white">All</buttun>
+         <buttun class="transition-all duration-500 border-2 border-orange-600 text-orange-600 px-4 py-2 rounded-md cursor-pointer hover:bg-orange-500 hover:text-white">Burger</buttun>
+         <buttun class="transition-all duration-500 border-2 border-orange-600 text-orange-600 px-4 py-2 rounded-md cursor-pointer hover:bg-orange-500 hover:text-white">Pizza</buttun>
+         <buttun class="transition-all duration-500 border-2 border-orange-600 text-orange-600 px-4 py-2 rounded-md cursor-pointer hover:bg-orange-500 hover:text-white">Salad</buttun>
+      </div>
+      <p>Filter Price</p>
+
+      <div>
+         <buttun class="transition-all duration-500 border-2 border-orange-600 text-orange-600 px-6 py-2 rounded-md cursor-pointer hover:bg-orange-500 hover:text-white">$</buttun>
+         <buttun class="transition-all duration-500 border-2 border-orange-600 text-orange-600 px-6 py-2 rounded-md cursor-pointer hover:bg-orange-500 hover:text-white">$$</buttun>
+         <buttun class="transition-all duration-500 border-2 border-orange-600 text-orange-600 px-6 py-2 rounded-md cursor-pointer hover:bg-orange-500 hover:text-white">$$$</buttun>
       </div>
    </div>
 
-   <!--! PICTURES -->
-   <div class="pictures grid place-items-center w-[100%] min-h-[100vh] bg-slate-800">
-      <div class="container w-[100%] h-[100%] lg:w-[80%]  md:mx-auto">
-         <div class="flex flex-col lg:flex-row p-8 gap-8 md:flex-row">
-            <div class="w-[100%] h-[250px] md:w-[200%] lg:h-[350px] lg:w-[150%] xl:w-[120%]">
-               <img class="object-cover w-full h-full rounded-[6px] " src="https://images.unsplash.com/photo-1495080600440-47b003ed9521?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Picture">
-            </div>
-            <div class="flex flex-col gap-y-2 md:justify-center ">
-               <p class="text-2xl uppercase text-white font-bold md:text-3xl" >Winter Forest</p>
-               <p class="text-white text-justify">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam tenetur explicabo eaque natus sequi dolorem? Molestias soluta voluptates officiis aut provident itaque ipsam assumenda laudantium.</p>
-            </div>
-         </div>
-         <div class="flex flex-col lg:flex-row p-8 gap-8 md:flex-row">
-            <div class="flex flex-col gap-y-2 md:justify-center ">
-               <p class="text-2xl uppercase text-white font-bold md:text-3xl">Butterfly</p>
-               <p class="text-white text-justify">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam tenetur explicabo eaque natus sequi dolorem? Molestias soluta voluptates officiis aut provident itaque ipsam assumenda laudantium.</p>
-            </div>
-            <div class="w-[100%] h-[250px] md:w-[200%] lg:h-[350px] lg:w-[150%] xl:w-[120%]">
-               <img class="object-cover w-full h-full rounded-[6px] " src="https://plus.unsplash.com/premium_photo-1668824632073-5b76f7946a72?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHx8" alt="Picture">
-            </div>
-         </div>
-         <div class="flex flex-col lg:flex-row p-8 gap-8 md:flex-row">
-            <div class="w-[100%] h-[250px] md:w-[200%] lg:h-[350px] lg:w-[150%] xl:w-[120%]">
-               <img class="object-cover w-full h-full rounded-[6px] " src="https://images.unsplash.com/photo-1712194295920-a7e01399bf9f?q=80&w=1779&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Picture">
-            </div>
-            <div class="flex flex-col gap-y-2 md:justify-center ">
-               <p class="text-2xl uppercase text-white font-bold md:text-3xl">galaxy</p>
-               <p class="text-white text-justify">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam tenetur explicabo eaque natus sequi dolorem? Molestias soluta voluptates officiis aut provident itaque ipsam assumenda laudantium.</p>
-            </div>
+   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 place-items-center w-full py-8 rounded-md gap-4">
+      <!-- 1 -->
+      <div class="relative w-[90%] h-[250px]overflow-hidden rounded-md shadow-xl">
+         <img class="h-[200px] w-full object-cover " src="imgs/b5.jpg" alt="">
+         <div class="flex p-4 items-center justify-between">
+            <p class="text-orange-600 font-bold">This is a burger</p>
+            <buttun class="transition-all duration-500 border-2 border-orange-600 text-orange-600 px-6 py-1 rounded-md cursor-pointer hover:bg-orange-500 hover:text-white">$</buttun>
          </div>
       </div>
-   </div>
-   <!--! PROJECTS -->
-   <div class="gallery w-[100%] min-h-[100vh] bg-slate-800 grid place-items-center gap-8 lg:gap-12 xl:gap-0">
-      <p class="text-white text-3xl font-bold text-center md:text-5xl">PROJECT</p>
-      <div class="flex flex-col flex-wrap items-center justify-center w-[100%] py-4 px-10 gap-4 md:gap-10 md:flex-row">
-         <div class=" shadow image border-2 flex flex-col rounded-[6px] gap-4 min-h-[400px] sm:max-w-[500px] md:max-w-[400px] p-2">
-            <img class="min-w-[300px] " src="./imgs/project1.PNG" alt="">
-            <p class="text-white px-4 text-lg">This is my first semi-final defense of my WS-101 and PF-101. In my project theres a lot of code that i made to create this project. If You Want to vist click here -> <span><a class="uppercase font-bold text-purple-500 underline"
-            href="https://mrkslvo.github.io/salvoAct/">Project</a></span>.</p>
-         </div>
-         <div class=" shadow image border-2 flex flex-col rounded-[6px] gap-4 min-h-[400px] sm:max-w-[500px] md:max-w-[400px] p-2">
-            <img class="min-w-[300px]" src="./imgs/porfolio.PNG" alt="">
-            <p class="text-white px-4 text-lg">This is my portfolio project. This is where you contact me, email ne or others. If You Want to vist click here -> <span><a class="uppercase font-bold text-purple-500 underline"
-            href="https://mrkslvo.github.io/salvoAct/">Portfolio</a></span>.</p>
-         </div>
-         <div class="shadow image border-2 flex flex-col rounded-[6px] gap-4 min-h-[400px] sm:max-w-[500px] md:max-w-[400px] p-2">
-            <img class="min-w-[300px]" src="./imgs/tail.PNG" alt="">
-            <p class="text-white px-4 text-lg">This is my first tailwindcss practice. If You Want to vist click here -> <span><a class="uppercase font-bold text-purple-500 underline"
-            href="https://mrkslvo.github.io/salvoAct/">Practice</a></span>.</p>
+      <!-- 2 -->
+      <div class="relative w-[90%] h-[250px]overflow-hidden rounded-md shadow-xl">
+         <img class="h-[200px] w-full object-cover " src="imgs/p4.jpg" alt="">
+         <div class="flex p-4 items-center justify-between">
+            <p class="text-orange-600 font-bold">This is a pizza</p>
+            <buttun class="transition-all duration-500 border-2 border-orange-600 text-orange-600 px-6 py-1 rounded-md cursor-pointer hover:bg-orange-500 hover:text-white">$$$</buttun>
          </div>
       </div>
+      <!-- 3 -->
+      <div class="relative w-[90%] h-[250px]overflow-hidden rounded-md shadow-xl">
+         <img class="h-[200px] w-full object-cover " src="imgs/b4.jpg" alt="">
+         <div class="flex p-4 items-center justify-between">
+            <p class="text-orange-600 font-bold">This is a burger</p>
+            <buttun class="border-2 border-orange-600 text-orange-600 px-6 py-1 rounded-md cursor-pointer hover:bg-orange-500 hover:text-white">$$$$</buttun>
+         </div>
+      </div>
+      <!-- 4 -->
+      <div class="relative w-[90%] h-[250px]overflow-hidden rounded-md shadow-xl">
+         <img class="h-[200px] w-full object-cover " src="imgs/p7.jpg" alt="">
+         <div class="flex p-4 items-center justify-between">
+            <p class="text-orange-600 font-bold">This is a pizza</p>
+            <buttun class="transition-all duration-500 border-2 border-orange-600 text-orange-600 px-6 py-1 rounded-md cursor-pointer hover:bg-orange-500 hover:text-white">$</buttun>
+         </div>
+      </div>
+      <!-- 5 -->
+      <div class="relative w-[90%] h-[250px]overflow-hidden rounded-md shadow-xl">
+         <img class="h-[200px] w-full object-cover " src="imgs/b8.jpg" alt="">
+         <div class="flex p-4 items-center justify-between">
+            <p class="text-orange-600 font-bold">This is a burger</p>
+            <buttun class="border-2 border-orange-600 text-orange-600 px-6 py-1 rounded-md cursor-pointer hover:bg-orange-500 hover:text-white">$$</buttun>
+         </div>
+      </div>
+      <!-- 6 -->
+      <div class="relative w-[90%] h-[250px]overflow-hidden rounded-md shadow-xl">
+         <img class="h-[200px] w-full object-cover " src="imgs/p6.jpg" alt="">
+         <div class="flex p-4 items-center justify-between">
+            <p class="text-orange-600 font-bold">This is a pizza</p>
+            <buttun class="transition-all duration-500 border-2 border-orange-600 text-orange-600 px-6 py-1 rounded-md cursor-pointer hover:bg-orange-500 hover:text-white">$</buttun>
+         </div>
+      </div>
+      <!-- 7 -->
+      <div class="relative w-[90%] h-[250px]overflow-hidden rounded-md shadow-xl">
+         <img class="h-[200px] w-full object-cover " src="imgs/b6.jpg" alt="">
+         <div class="flex p-4 items-center justify-between">
+            <p class="text-orange-600 font-bold">This is a burger</p>
+            <buttun class="transition-all duration-500 border-2 border-orange-600 text-orange-600 px-6 py-1 rounded-md cursor-pointer hover:bg-orange-500 hover:text-white">$$$</buttun>
+         </div>
+      </div>
+      <!-- 8 -->
+      <div class="relative w-[90%] h-[250px]overflow-hidden rounded-md shadow-xl">
+         <img class="h-[200px] w-full object-cover " src="imgs/p1.jpg" alt="">
+         <div class="flex p-4 items-center justify-between">
+            <p class="text-orange-600 font-bold">This is a pizza</p>
+            <buttun class="transition-all duration-500 border-2 border-orange-600 text-orange-600 px-6 py-1 rounded-md cursor-pointer  hover:text-white">$</buttun>
+         </div>
+      </div>
+      <!-- 9 -->
+      <div class="relative w-[90%] h-[250px]overflow-hidden rounded-md shadow-xl">
+         <img class="h-[200px] w-full object-cover " src="imgs/b1.jpg" alt="">
+         <div class="flex p-4 items-center justify-between">
+            <p class="text-orange-600 font-bold">This is a burger</p>
+            <buttun class="transition-all duration-500 border-2 border-orange-600 text-orange-600 px-6 py-1 rounded-md cursor-pointer hover:bg-orange-500 hover:text-white">$$$$</buttun>
+         </div>
+      </div>
+      <!-- 10 -->
+      <div class="relative w-[90%] h-[250px]overflow-hidden rounded-md shadow-xl">
+         <img class="h-[200px] w-full object-cover " src="imgs/b2.jpg" alt="">
+         <div class="flex p-4 items-center justify-between">
+            <p class="text-orange-600 font-bold">This is a burger</p>
+            <buttun class="transition-all duration-500 border-2 border-orange-600 text-orange-600 px-6 py-1 rounded-md cursor-pointer hover:bg-orange-500 hover:text-white">$</buttun>
+         </div>
+      </div>
+
+
+
    </div>
+
+
 </body>
 </html>
